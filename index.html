@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <div id="header"></div>
+    <header class="hero">
+      <div class="container">
+        <h1 id="hero-name"></h1>
+        <p id="hero-bio"></p>
+        <div class="social-links">
+          <a href="#" class="btn" id="github-link">
+            <i data-lucide="github"></i> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/akanksha-dixit-151404204/" class="btn" id="linkedin-link">
+            <i data-lucide="linkedin"></i> LinkedIn
+          </a>
+          <a href="mailto:akankshadixit106@gmail.com" class="btn" id="email-link">
+            <i data-lucide="mail"></i> Email
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2><i data-lucide="cpu"></i> Skills & Technologies</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Frontend</h3>
+            <div class="tags" id="frontend-skills"></div>
+          </div>
+          <div class="skill-card">
+            <h3>Backend</h3>
+            <div class="tags" id="backend-skills"></div>
+          </div>
+          <div class="skill-card">
+            <h3>Cloud Devops</h3>
+            <div class="tags" id="cloud_devops-skills"></div>
+          </div>
+          <div class="skill-card">
+            <h3>databases</h3>
+            <div class="tags" id="databases-skills"></div>
+          </div>
+          <div class="skill-card">
+            <h3>Tools</h3>
+            <div class="tags" id="tools-skills"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <h2><i data-lucide="briefcase"></i> Experience & Education</h2>
+        <div class="timeline" id="experience-list"></div>
+      </div>
+    </section>
+    <section class="section projects" id="project-div">
+      <div class="container">
+        <h2><i data-lucide="code-2"></i> Featured Projects</h2>
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project cards will be injected here by JavaScript -->
+        </div>
+      </div>
+    </section>
+    <section class="section daily-projects" id="daily-projects-div">
+        <div class="container">
+          <h2><i data-lucide="code-2"></i> Daily Coding Practice</h2>
+          <div class="daily-projects-grid" id="daily-projects-grid">
+            <!-- Project cards will be injected here by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          © <span id="year"></span> <span id="footer-name"></span>. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="/portfolio-project/js/main.js"></script>
+  </body>
+</html>
